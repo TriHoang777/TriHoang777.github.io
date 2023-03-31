@@ -1,0 +1,229 @@
+@import url("path/to/kaushan-script.ttf");
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+  background-color: #222;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+
+nav ul li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 80px #000000,
+    0 0 120px #000000;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* home section */
+.home {
+  background-image: url("https://wallpaperaccess.com/full/1579759.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.home h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: "Kaushan Script";
+}
+
+.home p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #222;
+}
+
+/* About section */
+.about {
+  background-color: #d3d3d3;
+  padding: 50px 0;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Kaushan Script";
+}
+
+.about p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Project Section */
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.projects {
+  text-align: center;
+}
+
+.projects i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #0077b5;
+}
+
+.projects h2 {
+  padding-top: 30px;
+  font-family: "Lobster";
+  font-size: 60px;
+}
+
+.projects a {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Bungee";
+  text-decoration: none;
+}
+
+.projects img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+/* Skillstack section */
+.skillstack {
+  padding-left: 10%;
+}
+.skillstack div {
+  display: inline;
+  font-size: 40px;
+}
+.skillstack h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: left;
+  font-family: "lobster";
+}
+.stackhtml {
+  color: rgb(250, 0, 0);
+}
+.stackcss {
+  color: rgb(0, 102, 255);
+}
+.stackjs {
+  color: rgb(253, 238, 24);
+}
+/* Contact section */
+.contact {
+  background-color: #222;
+  min-height: 140px;
+  padding-top: 10px;
+}
+.contact h2 {
+  font-size: 30px;
+  font-family: "Kaushan Script";
+  text-align: center;
+  color: white;
+}
+.contact a {
+  color: white;
+  font-size: 35px;
+}
+.contact p {
+  color: white;
+  text-align: center;
+}
+
+.contact ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 40px;
+}
+
+.contact li {
+  list-style-type: none;
+}
